@@ -10,7 +10,7 @@ fs.readdir(
   { withFileTypes: true },
   (err, files) => {
     if (err) {console.log(`Error: ${err}`)};
-    stylesForBundle = [];                                   //массив для стилей
+    let stylesForBundle = [];                                   //массив для стилей
 
     for (let file of files) {
       let ext = path.extname(file.name); 
